@@ -10,9 +10,9 @@ import java.sql.Statement;
 
 public class Util {
 
-    private String url = "jdbc:mysql://localhost/user";
-    private String username = "root";
-    private String password = "root";
+    private final static  String url = "jdbc:mysql://localhost/user";
+    private final static String username = "root";
+    private final static String password = "root";
     private Connection connection;
 
     public Connection getConnection() {

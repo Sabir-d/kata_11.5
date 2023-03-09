@@ -10,15 +10,15 @@ public class Main {
         UserServiceImpl userService = new UserServiceImpl();
         userService.dropUsersTable();
         userService.createUsersTable();
-        userService.saveUser("Dadashev","Sabir", (byte) 29);
-        userService.saveUser("Dadashev","Sabir", (byte) 29);
-        userService.saveUser("Dadashev","Sabir", (byte) 29);
-        userService.saveUser("Dadashev","Sabir", (byte) 29);
-        userService.getAllUsers().forEach(user -> System.out.println("ID =" +user.getId()+" name = "+user.getName()+" nameLast = "+user.getLastName()+" age = "+user.getAge()));
+        userService.saveUser("Dadashev", "Sabir", (byte) 29);
+        userService.saveUser("Dadashev", "Sabir", (byte) 29);
+        userService.saveUser("Dadashev", "Sabir", (byte) 29);
+        userService.saveUser("Dadashev", "Sabir", (byte) 29);
+        userService.getAllUsers().forEach(user -> System.out.println(user.toString()));
         userService.removeUserById(2);
-        userService.getAllUsers().forEach(user -> System.out.println("ID =" +user.getId()+" name = "+user.getName()+" nameLast = "+user.getLastName()+" age = "+user.getAge()));
+        userService.getAllUsers().forEach(user -> System.out.println(user.toString()));
         userService.cleanUsersTable();
-        userService.getAllUsers().forEach(user -> System.out.println("ID =" +user.getId()+" name = "+user.getName()+" nameLast = "+user.getLastName()+" age = "+user.getAge()));
+        userService.getAllUsers().forEach(user -> System.out.println(user.toString()));
 
 
     }
