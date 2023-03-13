@@ -15,11 +15,11 @@ public class Main {
         userService.saveUser("Dadashev", "Sabir", (byte) 29);
         userService.saveUser("Dadashev", "Sabir", (byte) 29);
         userService.saveUser("Dadashev", "Sabir", (byte) 29);
-        System.out.println( userService.getAllUsers());
+        userService.getAllUsers().forEach(user -> System.out.println(user));
         userService.removeUserById(2);
-        System.out.println( userService.getAllUsers());
+        userService.getAllUsers().forEach(user -> System.out.println(user));
         userService.cleanUsersTable();
-        System.out.println( userService.getAllUsers());
+        userService.getAllUsers().forEach(user -> System.out.println(user));
         userService.dropUsersTable();
     }
 }
